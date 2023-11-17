@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+.container{
+    margin-top: 100px;
+    border: 1px solid #000;
+    background-color: green;
+}
+
+.container .item{
+    border: 1px solid #000;
+    background-color: rgb(255, 255, 154);
+}
+
+.container1{
+    display: flex;
+    margin-top: 0;
+}
+
+.container1 .item1{
+    width: 200px;
+    /*
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    */
+    flex: 1 1 auto;
+
+    /* flex-grow: 1 flex-shrink:1 flex-basis:auto */
+    flex: 1 auto;
+
+    /* flex-grow: 1 flex-shrink:1 flex-basis:0% */
+    flex: 1;
+
+
+    /* 
+    flex-grow: 1;  --> 늘어날 공간이 있으면 늘어나겠다
+    flex-shrink: 1;  --> 줄어들 공간이 있으면 줄어들겠다
+    flex-basis: auto; --> 넓이를 절정했다면 그것을 인식하겠다
+    */
+}
+
+
+/* container2 */
+.container2{
+    display: flex;
+    height: 50vh;
+}
+
+.container2 .item2{
+    height: 100px;
+    align-self: center; 
+	/* align-self: flex-start; 
+	align-self: flex-end;*/ 
+}
+
+/* container3 */
+.container3{
+    display: flex;
+    height: 50vh;
+}
+
+
+.item3:nth-child(1){
+    order: 3;
+}
+
+.item3:nth-child(2){
+    order: 1;
+}
+
+.item3:nth-child(3){
+    order: 2;
+    height: 100px;
+    margin: auto 0;
+}
+
+
+
+

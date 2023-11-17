@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+
+*{margin: 0; padding: 0;}
+
+#wrap{}
+
+#wrap>div{
+    margin-top: 20px;
+    border-bottom: 2px solid black;
+    padding: 0 5vw 20px;
+}
+
+input{
+    outline: none;
+}
+
+.box2 form{
+    padding: 10px;
+    border: 1px solid #222;
+
+}
+
+.box2 fieldset{
+    padding: 10px;
+}
